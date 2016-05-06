@@ -15,13 +15,19 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/hover-min.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet" type="text/css">
 
+ 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,7 +47,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Emily</span> Roller
+                    <img src="img/er-logo.png" class="nav-img"><span class="light">  Emily</span> Roller
                 </a>
             </div>
 
@@ -53,10 +59,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Portoflio</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Resume</a>
+                        <a class="page-scroll" href="#portfolio">Portoflio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#resume">Resume</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -74,7 +83,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Nice to meet you...</h1>
+                        <h1 class="brand-heading hvr-float-shadow">Nice to meet you...</h1>
                         <p class="intro-text">Hi! I'm Emily, a student, designer, and adventure seeker.</p>
                     </div>
                 </div>
@@ -85,67 +94,277 @@
     <!-- About Section -->
     <section id="about">
         <div class="about-header row">
-                <h2 class="text-center">About</h2>
+                <h2 class="text-center hvr-grow">About<hr></h2>
         </div>
+
     <div id="about" class="container content-section text-center">
 
-        <div class="row">
-            <div class="col-lg-2 col-md-6">
-                <h1 class="text-left header-elevator">The Elevator Speech</h1>
+        <div class="row row-about">
+            <div class="col-lg-2 col-md-12">
+                <h1 class="text-left header-elevator hvr-wobble-vertical">The Elevator Speech</h1>
             </div>
             <div id="elevator" class="col-lg-6 col-md-6 text-justify">
-                <p>I am a student at the University of Connectiut, studying Consumer Judgment and Decision Making. I study research in the fields of psychology, communications and business in order to better understand how people make decisions and how context can affect their decisions. With a passion for web design, I am taking web development courses as well and my work is inspired by my research in the user thought and behavior process.</p>
+                <p>I am a student at the University of Connecticut, studying Consumer Judgment and Decision Making. I study research in the fields of psychology, communications and business in order to better understand how people make decisions and how context can affect their decisions. With a passion for web design, I am taking web development courses as well and my work is inspired by my research in the user thought and behavior process.</p>
             </div>
-            <div class="col-lg-4 col-md-12">
-                <img src="img/venn.png" alt="venn-skills">
+            <div class="col-lg-4 col-md-6">
+                <img src="img/venn.png" alt="venn-skills" class="hvr-grow">
             </div>
         </div>
     </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
+    <!-- Portfolio -->
+    <section id="portfolio" class="content-section text-center">
+        <div class="portfolio-section">
+        <div class="row">
+                <h2 class="text-center hvr-grow">Portfolio<hr></h2>
+        </div>
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/core-lab-home.png" class="img-responsive" alt="Core Lab">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Core Lab 
+                                        </div>
+                                        <div class="project-name">
+                                            A UConn Aurora Site
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/writing-sample.png" class="img-responsive" alt="Writing Sample">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Research
+                                        </div>
+                                        <div class="project-name">
+                                            Writing Sample
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/cru-instagram.png" class="img-responsive" alt="Cru Instagram">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Digital Strategist
+                                        </div>
+                                        <div class="project-name">
+                                            Cru Social Media
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/advising-analytics.png" class="img-responsive" alt="Analytics">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            User Research
+                                        </div>
+                                        <div class="project-name">
+                                            Revised UConn Advising Site
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/zen.png" class="img-responsive" alt="CSS Showcase">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                           CSS 
+                                        </div>
+                                        <div class="project-name">
+                                            CSS Showcase Project
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="portfolio-inner">
+                            <a href="#" class="portfolio-box">
+                                <img src="img/fidelco-give.png" class="img-responsive" alt="Wireframes">
+                                <div class="portfolio-box-caption">
+                                    <div class="portfolio-box-caption-content">
+                                        <div class="project-category text-faded">
+                                            Client Site Redesign
+                                        </div>
+                                        <div class="project-name">
+                                            Proposed Wireframes
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Resume Section -->
+    <section id="resume">
+    <div class="container content-section text-center">
+        <div class="row">
+                <h2 class="text-center section-header hvr-grow">Resume<hr></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Emily Roller</h2>
+                <p>University of Connecticut<br>Class of 2017<br>Consumer Judgment and Decision Making</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid skills-container text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3 class="hvr-float-shadow">Skills</h2>
+            </div>
+        </div>
+
+        <div class="row center-container">
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/user-behavior.png" class="hvr-float">
+                    <h5>User Behavior</h5>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/bootstrap.png" class="hvr-float">
+                    <h5>Bootstrap and Sass</h5>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/social-media.png" class="hvr-float">
+                    <h5>Social Media Strategy</h5>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/github-logo.png" class="hvr-float">
+                    <h5>Github</h5>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/usability-research.png" class="hvr-float">
+                    <h5>Usability Research</h5>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+                <div class="skills-inner">
+                    <img src="img/axure.png" class="hvr-float">
+                    <h5>Axure Wireframes/ Prototypes</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3 class="hvr-float-shadow">Experience</h3>
+            </div>
+        </div>
+
+            <div class="row experience-row">
+                <div class="col-md-4 col-sm-6 mintz">
+                    <div class="experience-inner">
+                        <img src="img/mh.png">
+                        <h4>Digital Intern</h4>
+                        <h5 class="center-text">Mintz + Hoke<br>Avon, CT</h5>
+                        <ul  class="list-unstyled">
+                            <li>Collaborate with digital team.</li>
+                            <li>Create wireframes and prototypes. </li>
+                            <li>Use Google Scholar, Umbraco CMS, and Wordpress.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 uconn">
+                    <div class="experience-inner">
+                    <img src = "img/mh.png">
+                    <h4 class="center-text">Research Assistant</h4>
+                    <h5 class="center-text">Department of Psychology<br>University of Connecticut</h5>
+                        
+                        <ul class="list-unstyled">
+                            <li>Design and run independent studies.</li>
+                            <li>Collaborate with professors and research team to analyze current studies. </li>
+                            <li>Review current research in the field of Judgment and Decision-Making.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 sec">
+                    <div class="experience-inner">
+                        <img src = "img/mh.png">
+                        <h4 class="center-text">Community Consultant</h4>
+                        <h5 class="center-text">Social Entrepreneurship Corps<br>Antigua, Guatemala</h5>
+                        <ul class="list-unstyled">
+                            <li>Promote and distribute high impact products.</li>
+                            <li>Conduct field research and anthropological interviews with local residents.</li>
+                            <li>Assess and improve products to meet user needs.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Start Bootstrap</h2>
-                <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg"><i class="fa fa-google-plus fa-fw"></i> <span class="network-name">Google+</span></a>
-                    </li>
-                </ul>
+                <h2 class="text-center section-header hvr-grow">Contact<hr></h2>
+        </div>
+
+        <div class="row">
+            <div class="center-container">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="text-center contact-text hvr-wobble-vertical">Keep in Touch</h1>
+            </div>
+            <div class="col-md-6 col-sm-12 text-center contact-text">
+                <p>Emily Roller<br>
+                Consumer Judgment and Decision Making<br>
+                University of Connecticut<br>
+                Class of 2017</p>
+                <a href="www.linkedin.com/in/emilyroller">LinkedIn</a>
             </div>
         </div>
+        </div>
+    </div>
     </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
 
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Your Website 2014</p>
+            <p>Copyright &copy; Emily Roller 2016</p>
         </div>
     </footer>
 
