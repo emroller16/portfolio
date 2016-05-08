@@ -68,7 +68,7 @@ p {
 }
 
 a {
-    color: $primary;
+    color: $green;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -133,9 +133,9 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: rgba(white, 0.3);
+                    background-color: rgba(black, 0.1);
                     &:hover {
-                        color: white;
+                        color: black;
                     }
                 }
             }
@@ -183,10 +183,16 @@ a {
     color: $purple;
 }
 
+.intro-text {
+   background: rgba(0,0,0,.2);
+}
+
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
+
+
 
 .intro .intro-body .brand-heading {
     font-size: 4.2em;
@@ -240,15 +246,18 @@ a {
 }
 
 .header-elevator {
-    margin-top: 5%;
     color: $black;
     text-align: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-@media(min-width:767px) {
+@media(min-width:1200px) {
     .header-elevator {
         text-align:left;
         padding-top: 10%;
+        margin-top: 30%;
+        margin-left: 50px;
     }
 }
 
@@ -291,7 +300,8 @@ a {
 }
 
  .portfolio-box>img {
-    width:100%;
+    width:400px;
+    margin: 0 auto;
 }
 
 .portfolio-box {
@@ -351,6 +361,10 @@ a {
     .portfolio-section {
         padding: 50px 0;
     }
+
+    .portfolio-box>img {
+    width:100%;
+}
 
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
         font-size: 1.3em;
@@ -448,8 +462,20 @@ a {
     }
 
 /*Contact*/
-.row-contact {
-    max-width: 500;
+#contact {
+    center: center scroll;
+    background: url(../img/bg7.png) repeat center center fixed;
+    padding-top:5%;
+    padding-bottom: 5%;
+    min-height: 300px;
+
+        h1 {
+            padding-bottom: 2%;
+        }
+}
+
+.center-container-contact {
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -467,6 +493,21 @@ a {
 
     p {
         -webkit-margin-after: 0em;
+    }
+}
+
+footer {
+    padding: 2% 0;
+
+    img {
+    display:inline block;
+    height: 30px;
+    }
+
+    h5 {
+    color: $purple;
+    font-size: 1.2em;
+    margin-bottom: 0px;
     }
 }
 
@@ -515,12 +556,6 @@ ul.banner-social-buttons {
 }
 */
 
-footer {
-    padding: 50px 0;
-    p {
-        margin: 0;
-    }
-}
 
 ::-moz-selection {
     text-shadow: none;
