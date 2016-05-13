@@ -93,11 +93,11 @@ a {
     border-bottom: 1px solid rgba(white, 0.3);
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: black;
+    background-color: white;
     .navbar-toggle {
         padding: 4px 6px;
         font-size: 16px;
-        color: white;
+        color: $purple;
         &:focus,
         &:active {
             outline: none;
@@ -106,12 +106,16 @@ a {
     }
     .navbar-brand {
         font-weight: 700;
+        color: $purple;
         &:focus {
             outline: none;
         }
     }
     a {
-        color: white;
+        color: #c6c2c2;
+    }
+    .collapse-color {
+        color: $purple;
     }
     .nav {
         li {
@@ -120,9 +124,9 @@ a {
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: rgba(white, 0.8);
+                    color: rgba($purple, 0.8);
                     outline: none;
-                    background-color: transparent;
+                    background-color: rgba(227, 246, 190, 0.2);
                 }
                 &:focus,
                 &:active {
@@ -157,6 +161,11 @@ a {
                     color:$purple;
                 }
         }
+
+        .collapse-color {
+            color: #c6c2c2;
+        }
+
     }
 }
 
@@ -165,16 +174,14 @@ a {
     height:35px;
         }
 
+/*Intro Text*/
+
 .intro {
     display: table;
     width: 100%;
-    padding: 100px 0;
+    padding-top: 100px 0;
     text-align: center;
-    background: url(../img/leafpattern400.png) repeat center center fixed;
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;*/
+    background: url(../img/whiteleaf400.png) repeat center center fixed;
     height: 100vh;
     width: 100vw;
 }
@@ -183,16 +190,18 @@ a {
     color: $purple;
 }
 
-.intro-text {
-   background: rgba(0,0,0,.2);
+.brand-heading {
+    margin-top: 13%; 
+}
+
+.highlight {
+   background: rgba(white, .4);
 }
 
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
-
-
 
 .intro .intro-body .brand-heading {
     font-size: 4.2em;
@@ -204,7 +213,7 @@ a {
 
 @media(min-width:768px) {
     .intro {
-        height: 100%;
+        height: 90vh;
         padding: 0;
     }
 
@@ -424,7 +433,7 @@ a {
 
 /* Skills*/
 
-.skills-container {
+.resume-container {
     background: url(../img/pattern.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -488,7 +497,7 @@ a {
 #contact {
     a {
         margin:0px;
-        font-size:18px;
+        font-size:1.1em;
     }
 
     p {
@@ -510,52 +519,6 @@ footer {
     margin-bottom: 0px;
     }
 }
-
-
-
-
-/*
-.btn {
-    text-transform: uppercase;
-    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    border-radius: 0;
-}
-
-.btn-default {
-    border: 1px solid $primary;
-    color: $primary;
-    background-color: transparent;
-    &:hover,
-    &:focus {
-        border: 1px solid $primary;
-        outline: none;
-        color: black;
-        background-color: $primary;
-    }
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-    @media(max-width:1199px) {
-        margin-top: 15px;
-    }
-    @media(max-width:767px) {
-        li {
-            display: block;
-            margin-bottom: 20px;
-            padding: 0;
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-*/
-
 
 ::-moz-selection {
     text-shadow: none;
@@ -580,19 +543,3 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: rgba(white, 0.2);
 }
-
-
-/*my styles*/
-
-
-/*fonts*/
-
-
-
-/*Header*/
-
-.brand-heading {
-    margin-top: 13%; 
-}
-
-
