@@ -155,11 +155,6 @@ ul {
 
 /*Portfolio*/
 
-.portfolio-inner {
-	background-size: cover;
-	background-position-x: center;
-}
-
 #portfolioHeader {
 	background-image: url(../img/portfolio-header1.png);
 	background-repeat:no-repeat;
@@ -231,13 +226,13 @@ ul {
 
 /*Resume*/
 
-#uitsImg {
+.uconn .experience-inner img {
     width: 200px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-#tylerImg {
+.tyler .experience-inner img {
     width: 200px;
     padding-bottom: 15px;
     padding-top: 15px;
