@@ -126,6 +126,12 @@ ul {
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
+
+@media only screen and (min-width: 600px) {
+	.portfolio-inner {
+		min-height:500px!important;
+	}
+}
 	
 #peak {
 	color: #a4d0c4;
