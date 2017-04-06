@@ -1,7 +1,7 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   custom styles
    ========================================================================== */
 
 @charset "utf-8";
@@ -154,6 +154,12 @@ ul {
 }
 
 /*Portfolio*/
+
+.portfolio-inner {
+	background-size: cover;
+	background-position-x: center;
+}
+
 #portfolioHeader {
 	background-image: url(../img/portfolio-header1.png);
 	background-repeat:no-repeat;
