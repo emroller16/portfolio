@@ -126,11 +126,11 @@ ul {
 	margin-top: 2%;
 	margin-bottom: 2%;
 }
-
 	
 #peak {
 	color: #a4d0c4;
 }
+
 /*Resume*/
 #resumeHeader {
 	background-image: url(../img/resume-header.jpg);
@@ -148,10 +148,6 @@ ul {
 	color: white ;
 }
 
-#acadiaImg {
-	float:left;
-	margin-left: 2%;
-}
 
 /*Portfolio*/
 
@@ -169,19 +165,6 @@ ul {
 	padding-top: 9%;
 	padding-left:65%;
 	color: black;
-}
-
-#Heirloom {
-	background-color: #fefee7;
-	padding-bottom: 4%;
-}
-#heirloom p {
-	padding-left:1%;
-}
-
-#Acadia {
-	background-color: #a4d0c4;
-	padding-bottom: 4%;
 }
 
 #Writing {
@@ -227,17 +210,23 @@ ul {
 /*Resume*/
 
 .uconn.experience-inner img {
-    max-width: 200px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    max-width: 200px!important;
+    padding-bottom: 15px!important;
+    padding-top: 15px!important;
 }
 
 .tyler .experience-inner img {
-    max-width: 200px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    max-width: 200px!important;
+    padding-bottom: 15px!important;
+    padding-top: 15px!important;
 }
 
+.experience-inner img {
+    max-width: 200px!important;
+    padding-bottom: 15px!important;
+    padding-top: 15px!important;
+}
+	
 /*Contact*/
 #contactHeader {
 	background-image: url(img/contact-header.png) ;
@@ -276,9 +265,6 @@ ul {
 	padding-bottom: 25px;
 }
 
-/*#Contact2 a {
-	text-align: center;
-}*/
 
 
 
