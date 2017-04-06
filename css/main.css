@@ -229,6 +229,14 @@ ul {
 	padding-bottom:2%;
 	}
 
+/*Resume*/
+
+.uconn img {
+    width: 200px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
 /*Contact*/
 #contactHeader {
 	background-image: url(img/contact-header.png) ;
