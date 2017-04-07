@@ -16,7 +16,7 @@ min-width:500px!important;
     max-width: 200px;
 }
 
-.mintz .experience-inner img {
+.mintz.experience-inner img {
     padding-bottom: 15px!important;
     padding-top: 15px!important;
 }
@@ -25,11 +25,11 @@ min-width:500px!important;
     background-color: #73185E;
 }
 
-.tyler .experience-inner img {
+.tyler.experience-inner img {
     padding-bottom:35px!important;
 }
 
-.uconn .experience-inner img {
+.uconn.experience-inner img {
     padding-bottom:35px!important;
 }
 
